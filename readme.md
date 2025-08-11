@@ -37,7 +37,14 @@ docker run -d --name cyr2lat-bot --env-file .env cyr2lat
 ### 5) Проверить логи
 
 ```bash
+#запущен ли бот?
 docker logs -f cyr2lat-bot
+# разово показать последние 100 строк
+docker exec -it cyr2lat-bot sh -c 'tail -n 100 /app/bot.log'
+# “вживую” следить
+docker exec -it cyr2lat-bot sh -c 'tail -f /app/bot.log'
+
+
 ```
 
 Готово — бот работает.
