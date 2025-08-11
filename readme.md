@@ -22,8 +22,6 @@ cd <repo>
 echo 'BOT_TOKEN=123456:ABCDEF-your-token' > .env
 ```
 
-> **Важно:** файл `.env` не коммитим. Он уже в `.gitignore`/`.dockerignore`.
-
 ### 3) Собрать образ
 
 ```bash
