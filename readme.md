@@ -43,8 +43,6 @@ docker logs -f cyr2lat-bot
 docker exec -it cyr2lat-bot sh -c 'tail -n 100 /app/bot.log'
 # “вживую” следить
 docker exec -it cyr2lat-bot sh -c 'tail -f /app/bot.log'
-
-
 ```
 
 Готово — бот работает.
